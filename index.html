@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="all.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Videoform</title>
+</head>
+
+<body>
+    <div class="container">
+        <section class="video-bground">
+            <div class="caption-block">
+                <h2 class="caption animate__animated animate__bounce animate__repeat-3">Watch the video</h2>
+            </div>
+            <video class="video" width="1320" height="900" autoplay muted controls loop poster="img/photo-islands-min.png">
+                <source src="Islands-2.mp4">
+            </video>
+        </section>
+        <div class="flex-group">
+            <section class="audio-block">
+                <h2 class="caption animate__animated animate__bounce animate__repeat-3 animate__delay-3s">
+                    Listen to music</h2>
+                <audio class="audio" autoplay controls loop src="So-Long.mp3"></audio>
+            </section>
+            <section class="form-sect">
+                <div class="form-img-block">
+                    <img src="vintage.png" class="form-img-top animate__animated animate__jello" alt="">
+                </div>
+                <h2 class="h2  animate__animated animate__jello ">Register</h2>
+                <form  class="form">
+                    <div class="flex-block">
+                        <label for="f1" class="label">
+                            FIRST NAME
+                            <input type="text" class="f_input" id="f1" name="name" value="" placeholder="sdsd" required>
+                        </label>
+                        <label for="f2" class="label">
+                            LAST NAME
+                            <input type="text" class="f_input" id="f2" name="lastname" value="" placeholder="sdad"
+                                required>
+                        </label>
+
+                    </div>
+                    <label for="f3" class="label label-email">
+                        <span class="form-label-email ">EMAIL (field is empty)</span>
+                        <input type="email" id="f3" placeholder="asdasdasd@gmail.com">
+                    </label>
+
+                    <label for="f4" class="label">
+                        COLOR
+                        <input type="color" id="f4">
+                    </label>
+                    <label for="f5" class="label">
+                        FILE
+                        <input type="file" class="f_input" id="f5" multiple accept=".png, .jpeg, .jpg"
+                            title="Только картинки">
+                    </label>
+                    <label for="f6" class="label">
+                        COUNTRY
+                        <input type="text" class="f_input" id="f6" name="lastname" placeholder="Ukraine" value=""
+                            required>
+                    </label>
+                    <label for="f7" class="label">
+                        PHONE
+                        <input type="tel" name="tel" placeholder="+380 ** **** ** **" id="f7">
+                    </label>
+
+                    <label for="password-input" class="label password">
+                        PASSWORD
+                        <input type="password" id="password-input" placeholder="**********" name="password">
+                        <a href="#" class="password-control" onclick="return show_hide_password(this);"></a>
+                    </label>
+                    <label  class="label form-label">
+                        <img alt="checked"  class="form-check-icon"
+                            src="https://img.icons8.com/ios/50/000000/checked-checkbox--v2.png" />
+                        sign me up for the weekly newsletter
+                    </label>
+                    <label for="f10" class="label">
+                        <input class="label-submit" id="f10" type="submit" value="Welcome,sdsd">
+                    </label>
+
+                </form>
+            </section>
+        </div>
+    </div>
+
+    <script src="open.js">
+
+    </script>
+</body>
+
+</html>
